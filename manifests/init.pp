@@ -18,7 +18,7 @@
 #
 define sysctl (
   Optional[Enum[present, absent]]          $ensure  = undef,
-  Optional[String]                         $value   = undef,
+  Optional[Variant[String, Integer]]       $value   = undef,
   Optional[String]                         $prefix  = undef,
   String                                   $suffix  = '.conf',
   Optional[Variant[String, Array[String]]] $comment = undef,
